@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+
+const firstname ="Dimantha";
+const secondname ="Thiranjaya";
+const surname ="Weerakoon";
+const age =26;
+const country="Sri Lanka";
+
+const getfullName =(f,m,s) => {
+  return `${f} ${m} ${s}`;
+}
+
+const arr= ["Apple","Orange","Graphs"];
+
+
+const obj1 ={
+  fname:"Nirasha",
+  age: 25
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Employee Details</h1>
+      <p>Full Name : {firstname}{secondname}{surname}</p>
+      <p>Full Name Using Function : {getfullName("Dimantha", "Thiranjaya", "Weerakoon")}</p>
+      <p>Age : {age}</p>
+      <p>Country : {country}</p>
+      <p>{firstname} likes to eat {arr[1]}</p>
+      
+      <p>His Gf is {obj1.fname} & she is {obj1.age} years old</p> 
+
     </div>
   );
 }

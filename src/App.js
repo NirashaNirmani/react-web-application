@@ -14,7 +14,7 @@ const getfullName =(f,m,s) => {
 }
 
 const arr= ["Apple","Orange","Graphs"];
-
+const arr1= ["Apple","Orange","Graphs"];
 
 const obj1 ={
   fname:"Nirasha",
